@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  background-image: url('https://i.ibb.co/bgJ3MJXX/dito.png');
   font-family:
     -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -72,8 +71,21 @@ code {
 }
 
 body {
+  /* Оставляем шрифты и другие настройки */
   font-family: 'Google Sans Display', sans-serif;
-  background: var(--Neutral-00);
+  margin: 0;
+  padding: 0;
+
+  /* Этот блок полностью заменяет старый background */
+  background-image: url('https://i.ibb.co/bgJ3MJXX/dito.png');
+  background-color: #000; /* Цвет-подложка, если картинка не загрузится */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  /* Это очень важное свойство. Растягиваем body на весь экран */
+  min-height: 100vh;
 }
 
 :root {
