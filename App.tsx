@@ -46,8 +46,9 @@ function App() {
         <ErrorScreen />
         <Header />
 
-        {showUserConfig && <UserSettings />}
-        {showAgentEdit && <AgentEdit />}
+        {/* УДАЛЯЕМ ЭТИ ДВЕ СТРОКИ */}
+  {/* {showUserConfig && <UserSettings />} */}
+  {/* {showAgentEdit && <AgentEdit />} */}
         <div className="streaming-console">
           <main>
             <div className="main-app-area">
