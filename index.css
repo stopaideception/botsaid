@@ -71,21 +71,8 @@ code {
 }
 
 body {
-  /* Оставляем шрифты и другие настройки */
   font-family: 'Google Sans Display', sans-serif;
-  margin: 0;
-  padding: 0;
-
-  /* Этот блок полностью заменяет старый background */
-  background-image: url('https://i.ibb.co/bgJ3MJXX/dito.png');
-  background-color: #000; /* Цвет-подложка, если картинка не загрузится */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  /* Это очень важное свойство. Растягиваем body на весь экран */
-  min-height: 100vh;
+  background: var(--Neutral-00);
 }
 
 :root {
