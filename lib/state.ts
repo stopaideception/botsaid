@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import { create } from 'zustand';
-import { Agent, Charlotte, Paul, Shane, Penny } from './presets/agents';
+import { Agent, Paul } from './presets/agents';
 
 /**
  * User
@@ -45,7 +45,7 @@ export const useAgent = create<{
   update: (agentId: string, adjustments: Partial<Agent>) => void;
 }>(set => ({
   current: Paul,
-  availablePresets: [Paul, Charlotte, Shane, Penny],
+  availablePresets: [Paul],
   availablePersonal: [],
 
   addAgent: (agent: Agent) => {
