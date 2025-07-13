@@ -253,7 +253,7 @@ header:hover .createButton {
 }
 
 .streaming-console {
-  background: var(--Neutral-10);
+  background: transparent;
   color: var(--gray-300);
   display: flex;
   height: 100vh;
