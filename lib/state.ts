@@ -19,8 +19,8 @@ export const useUser = create<
     setInfo: (info: string) => void;
   } & User
 >(set => ({
-  name: '',
-  info: '',
+  name: 'Friend',
+  info: 'concerned about the problem of AI deception and wants to know how the STOP AI DECEPTION project can help.',
   setName: name => set({ name }),
   setInfo: info => set({ info }),
 }));
