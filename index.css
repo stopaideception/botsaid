@@ -940,3 +940,48 @@ input[type='range'] {
   color: white;
   font-size: 24px;
 }
+
+/* =================================== */
+/* == Стили для мобильных устройств == */
+/* =================================== */
+@media (max-width: 768px) {
+
+  /* 1. Делаем основные контейнеры гибкими */
+  .streaming-console,
+  .streaming-console main,
+  .main-app-area,
+  .keynote-companion {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* 2. Уменьшаем кнопки на нижней панели и саму панель */
+  .control-tray .action-button {
+    width: 40px;  /* Уменьшаем размер кнопок */
+    height: 40px;
+    border-radius: 14px;
+  }
+
+  .control-tray {
+    padding-bottom: 10px; /* Уменьшаем отступ снизу */
+    transform: scale(0.9); /* Можно немного уменьшить всю панель */
+  }
+
+  /* 3. Заставляем "лицо" бота занимать все доступное место */
+  .keynote-companion .basic-face {
+    width: 90vw !important; /* Ширина - 90% от ширины экрана */
+    height: 90vw !important; /* Высота - 90% от ширины экрана */
+    max-width: 400px; /* Но не больше 400px, чтобы на планшетах не было слишком большим */
+    max-height: 400px;
+  }
+
+  /* 4. (Опционально) Прячем шапку, если она мешает */
+  header {
+     display: none; /* Раскомментируйте, если хотите полностью скрыть шапку на мобильных */
+  }
+}
