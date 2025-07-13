@@ -37,18 +37,7 @@ export default function KeynoteCompanion() {
 
   // Initiate the session when the Live API connection is established
   // Instruct the model to send an initial greeting message
-  useEffect(() => {
-    const beginSession = async () => {
-      if (!connected) return;
-      client.send(
-        {
-          text: 'Greet the user and introduce yourself and your role.',
-        },
-        true
-      );
-    };
-    beginSession();
-  }, [client, connected]);
+  
 
   return (
     <div className="keynote-companion">
