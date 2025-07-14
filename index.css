@@ -493,6 +493,14 @@ header:hover .createButton {
   line-height: 1.75rem;
   padding: 4px;
 }
+.keynote-companion {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
 
 .counter-container {
   position: absolute;
@@ -940,56 +948,14 @@ input[type='range'] {
 }
 
 
-/* ========================================================= */
-/* == ФИНАЛЬНАЯ ВЕРСИЯ: УБИРАЕМ КОНФЛИКТЫ == */
-/* ========================================================= */
-
-/* 
-  Шаг 1: Контейнер .keynote-companion.
-  Его единственная задача - центрировать "лицо".
-  Больше он не пытается управлять размером.
 */
-.keynote-companion {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
+@media (min-width: 769px) {
 
-/* 
-  Шаг 2: Стили по умолчанию для "лица" (для ПК).
-  Здесь мы задаем ему маленький, фиксированный размер.
-*/
-.basic-face {
-  width: 300px !important;
-  height: 300px !important;
-}
-
-/* 
-  Шаг 3: Стили для мобильных.
-  Здесь мы переопределяем размер "лица" и чиним верстку.
-*/
-@media (max-width: 768px) {
-  
-  /* Делаем лицо большим и гибким */
-  .basic-face {
-    width: 85vw !important;
-    height: 85vw !important;
-  }
-
-  /* Остальные мобильные фиксы, которые уже работали */
-  .streaming-console {
-    overflow: hidden;
-  }
-  .main-app-area {
-    padding-bottom: 80px;
-  }
-  .control-tray {
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%) scale(0.9);
-    bottom: 0;
-    padding-bottom: 15px;
+  /*
+    Мы НЕ перезаписываем стили .keynote-companion,
+    а ДОБАВЛЯЕМ к ним одно-единственное свойство.
+  */
+  .keynote-companion {
+    transform: scale(0.5);
   }
 }
