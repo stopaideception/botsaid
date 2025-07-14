@@ -949,13 +949,28 @@ input[type='range'] {
 
 
 
-@media (min-width: 769px) {
+/* Стили для контейнера бота на ВСЕХ устройствах */
+#bot-container {
+  position: relative;
+  overflow: hidden;
 
-  /*
-    Мы НЕ перезаписываем стили .keynote-companion,
-    а ДОБАВЛЯЕМ к ним одно-единственное свойство.
+  /* 
+    НОВЫЙ КОД: Говорим, что контейнер никогда не должен
+    быть шире 550 пикселей. Это решит проблему на ПК.
+    Подберите это значение (500px, 600px) по своему вкусу.
   */
-  .keynote-companion {
-    transform: scale(0.8);
+  max-width: 550px;
+  
+  /* Центрируем контейнер, если ячейка сетки шире, чем 550px */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Делаем контейнер квадратным ТОЛЬКО на мобильных */
+@media (max-width: 768px) {
+  #bot-container {
+    aspect-ratio: 1 / 1;
+    /* Убираем max-width на мобильных, чтобы он занимал всю ширину */
+    max-width: none; 
   }
 }
