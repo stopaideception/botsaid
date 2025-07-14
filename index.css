@@ -952,8 +952,8 @@ input[type='range'] {
 .basic-face {
   width: 100% !important;
   height: 100% !important;
-  max-width: 500px !important;
-  max-height: 500px !important;
+  max-width: 300px !important;
+  max-height: 300px !important;
   aspect-ratio: 1 / 1;
 }
 
