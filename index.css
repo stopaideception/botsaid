@@ -955,6 +955,7 @@ input[type='range'] {
   max-width: 300px !important;
   max-height: 300px !important;
   aspect-ratio: 1 / 1;
+  background: radial-gradient(circle at center, #e6e1da, #cfc7b8);
 }
 
 /* 
