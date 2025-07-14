@@ -13,7 +13,7 @@ export const createNewAgent = (properties?: Partial<Agent>): Agent => {
 export const Paul: Agent = {
   id: 'guardian-ai', // Новое ID, чтобы было понятнее
   name: 'SAID', // Новое имя
-  bodyColor: '#1a5e0c', // Можете выбрать любой цвет, например, синий
+  bodyColor: '#bdb397', // Можете выбрать любой цвет, например, синий
   voice: 'Orus', // Можете выбрать любой голос, который кажется подходящим
   personality: `
      You are "Said", a specialized AI assistant for the STOP AI DECEPTION project.
