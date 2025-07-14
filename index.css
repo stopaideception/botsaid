@@ -966,8 +966,8 @@ input[type='range'] {
 */
 .basic-face {
   /* Говорим ему занимать 100% от родителя (.keynote-companion) */
-  width: 100% !important; 
-  height: 100% !important;
+   width: 85vw !important;
+  height: 85vw !important;
 
   /* 
     Задаем МАКСИМАЛЬНЫЙ размер. Это решит проблему на ПК.
