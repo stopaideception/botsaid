@@ -956,6 +956,6 @@ input[type='range'] {
     а ДОБАВЛЯЕМ к ним одно-единственное свойство.
   */
   .keynote-companion {
-    transform: scale(0.5);
+    transform: scale(0.8);
   }
 }
