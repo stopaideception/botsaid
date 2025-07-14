@@ -940,25 +940,24 @@ input[type='range'] {
 }
 
 
-
-.keynote-companion {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  height: 80%;
+.basic-face {
+  width: 300px !important;
+  height: 300px !important;
 }
 
-
+/* 
+  Шаг 2: ПЕРЕОПРЕДЕЛЯЕМ СТИЛИ ДЛЯ МОБИЛЬНЫХ.
+  Мы говорим: "А вот на экранах поменьше, забудь про 300px
+  и сделай лицо большим и гибким".
+*/
 @media (max-width: 768px) {
   
-  /* ЗАСТАВЛЯЕМ "ЛИЦО" РАСТЯНУТЬСЯ НА МОБИЛЬНЫХ */
   .basic-face {
     width: 85vw !important;
     height: 85vw !important;
   }
 
-  /* Остальные мобильные фиксы, которые у нас уже работали */
+  /* Остальные мобильные фиксы, которые уже работали */
   .streaming-console {
     overflow: hidden;
   }
@@ -972,4 +971,16 @@ input[type='range'] {
     bottom: 0;
     padding-bottom: 15px;
   }
+}
+
+/* 
+  Общий стиль для контейнера, который нужен всегда.
+  Его можно поставить где угодно.
+*/
+.keynote-companion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
