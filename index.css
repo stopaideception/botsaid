@@ -949,28 +949,29 @@ input[type='range'] {
 
 
 
-/* Стили для контейнера бота на ВСЕХ устройствах */
-#bot-container {
-  position: relative;
-  overflow: hidden;
-
-  /* 
-    НОВЫЙ КОД: Говорим, что контейнер никогда не должен
-    быть шире 550 пикселей. Это решит проблему на ПК.
-    Подберите это значение (500px, 600px) по своему вкусу.
-  */
-  max-width: 550px;
-  
-  /* Центрируем контейнер, если ячейка сетки шире, чем 550px */
-  margin-left: auto;
-  margin-right: auto;
+.basic-face {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 500px !important;
+  max-height: 500px !important;
+  aspect-ratio: 1 / 1;
 }
 
-/* Делаем контейнер квадратным ТОЛЬКО на мобильных */
+/* 
+  Мобильные стили, которые уже работали, оставляем как есть.
+*/
 @media (max-width: 768px) {
-  #bot-container {
-    aspect-ratio: 1 / 1;
-    /* Убираем max-width на мобильных, чтобы он занимал всю ширину */
-    max-width: none; 
+  .streaming-console {
+    overflow: hidden;
+  }
+  .main-app-area {
+    padding-bottom: 80px;
+  }
+  .control-tray {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+    bottom: 0;
+    padding-bottom: 15px;
   }
 }
