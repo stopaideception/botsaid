@@ -45,11 +45,11 @@ function ControlTray({ children }: ControlTrayProps) {
     }
   }, [showUserConfig, showAgentEdit, connected, disconnect]);
 
-  useEffect(() => {
-    if (!connected && connectButtonRef.current) {
-      connectButtonRef.current.focus();
-    }
-  }, [connected]);
+  //useEffect(() => {
+    //if (!connected && connectButtonRef.current) {
+      //connectButtonRef.current.focus();
+   // }
+ // }, [connected]);
 
   useEffect(() => {
     const onData = (base64: string) => {
