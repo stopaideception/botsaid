@@ -5,10 +5,11 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "frame-ancestors 'self' https://stop-neurodeception.web.app"
+          "value": "frame-ancestors 'self' https://stop-neurodeception.web.app https://aifake.pro"
         }
       ]
     }
   ]
 }
+
 
